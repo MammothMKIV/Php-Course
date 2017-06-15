@@ -2,14 +2,22 @@
 
 namespace Ino\Shop;
 
-
+/**
+ * Данный класс представляем собой пару Продукт -> Количество продуктов, хранящихся в корзине
+ *
+ * @package Ino\Shop
+ */
 class CartItem {
 	/**
+     * Указатель на продукт в корзине
+     *
 	 * @var Product
 	 */
 	private $product;
 
 	/**
+     * Количество продуктов данного типа в корзине
+     *
 	 * @var integer
 	 */
 	private $count;
@@ -26,6 +34,8 @@ class CartItem {
 	}
 
 	/**
+     * Получить соответствующий продукт корзины
+     *
 	 * @return Product
 	 */
 	public function getProduct() {
@@ -33,6 +43,8 @@ class CartItem {
 	}
 
 	/**
+     * Получить число элементов в корзине
+     *
 	 * @return integer
 	 */
 	public function getCount() {
